@@ -1,0 +1,81 @@
+Expression
+----------
+1. a+b  => Infix
+2. +ab  => Prefix
+3. ab+  => Postfix
+Where a and b are operands and + is an operator.
+
+Conversion
+----------
+Infix to Postfix Conversion
+Sample:
+    a+b ---> ab+
+
+Example:
+(A+B/C*(D+E)-F) ---> ABC/DE+*+F-
+
+Way-1: By BODMAS
+        (A+B/C*(D+E)-F)
+Step-1: (A+B/C* DE+ -F)
+Step-2: (A+ BC/ * DE+ -F)
+Step-3: (A+ BC/DE+* -F)
+Step-4: (ABC/DE+*+ -F)
+Step-5: ABC/DE+*+F-
+
+Way-2: By Stack [Program1.java]
+Rules [only for operators]
+    1. Priority
+        Operator    Priority    Priority Value
+        --------------------------------------
+        ^,$          High           3
+        *,/          Medium         2
+        +,-          Low            1
+
+    2. No two operators of same priority can stay together
+       into the stack.
+    3. If any operator inside the bracket should be poped out
+       from the stack.
+    4. Lower priority operator infront of higher priority operator
+       cannot be tolerated. if it happens the higher priority operator
+       should be poped out from the stack
+    5. Higher priority operator infront of lower priority operator
+       can stay together.
+
+A+B/C*(D+E)-F
+
+    Symbol      Stack          Postfix
+    -----------------------------------
+        A                      A
+        +       +              A
+        B       +              AB
+        /       +/             AB
+        C       +/             ABC
+        *       +*             ABC/
+        (       +*(            ABC/
+        D       +*(            ABC/D
+        +       +*(+           ABC/D
+        E       +*(+           ABC/DE
+        )       +*             ABC/DE+
+        -       -              ABC/DE+*+
+        F                      ABC/DE+*+F-
+
+
+Conversion of Postfix to infix
+-------------------------------
+ABC/DE+*+F-
+
+Symbol      Stack
+------------------
+  A         A
+  B         AB
+  C         ABC
+  /         A(B/C)   pop1=C and pop2=B =>   pop2 + symbol + pop1 => Push
+  D         A(B/C)D
+  E         A(B/C)DE
+  +         A(B/C)(D+E)
+  *         A((B/C)*(D+E))
+  +         (A+((B/C)*(D+E)))
+  F         (A+((B/C)*(D+E)))F
+  -         (A+((B/C)*(D+E)))-F
+
+HW: Program
