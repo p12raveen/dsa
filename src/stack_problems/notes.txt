@@ -93,3 +93,19 @@ Input       Output
 3.
 Input:    [73,74,75,71,69,72,76,73]
 output:   [1,1,4,2,1,1,0,0]
+
+4. Infix to prefix
+Input: A+B*C
+Output: +A*BC
+
+Explain:
+    1. Reverse infix expression
+    2. Swap Open and Close brackets
+    3. Convert expression to postfix
+    4. Reverse this postfix expression to prefix
+
+
+HW1. Prefix to Infix
+HW2. https://www.hackerrank.com/challenges/game-of-two-stacks/problem?isFullScreen=true
+
+

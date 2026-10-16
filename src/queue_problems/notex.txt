@@ -1,0 +1,63 @@
+1.
+Input:
+    1 Add customer X to the queue
+    2 serve and remove the customer at the front
+      of the queue
+
+Output:
+    print served customer with iD X  from front
+    to rear
+
+Input:
+    7
+    1   101
+    1   102
+    1   103
+    2
+    1   104
+    2
+    2
+
+Output: 101 102 103
+
+HW. Print remaining customers
+
+HW 2.
+Input:
+    1 Add print job X to the queue
+    2 Process and remove the next print job
+    3 Display the next print job without removing it.
+9
+1   501
+1   502
+3
+2
+1   503
+3
+2
+2
+3
+
+Output:
+    501
+    501
+    502
+    502
+    503
+    Printer queue is empty
+
+Explanation:
+-----------------------------------------------------------
+Operation       Action          Queue(F->R)         Output
+-----------------------------------------------------------
+1 501           Add job 501     501                    -
+1 502           Add job 502     501->502               -
+3               view next job   501->502               501
+2     print & remove front job  502                    501
+1 503           Add job 503     502->503               -
+3               view next job   502->503               502
+2     print & remove front job  503                    502
+2     print & remove front job  Empty                  503
+3               view next job   Empty           Printer queue is empty
+
+

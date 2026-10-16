@@ -1,4 +1,4 @@
-package expressions;
+package stack_problems;
 
 import java.util.Stack;
 
