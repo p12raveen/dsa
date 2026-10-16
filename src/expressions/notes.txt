@@ -79,3 +79,17 @@ Symbol      Stack
   -         (A+((B/C)*(D+E)))-F
 
 HW: Program
+
+
+2. Bracket Balancing
+Input       Output
+-------------------------
+{[()]}         YES
+{([)]}         NO
+((()))         YES
+((()           NO
+}{             NO
+
+3.
+Input:    [73,74,75,71,69,72,76,73]
+output:   [1,1,4,2,1,1,0,0]
