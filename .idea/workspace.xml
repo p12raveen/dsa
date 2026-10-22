@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd2efdf5-3575-4dfc-8aae-3d8fef53e28a" name="Changes" comment="14-10-2026">
-      <change afterPath="$PROJECT_DIR$/src/queue_problems/Program1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue_problems/notex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack_problems/Program4.java" afterDir="false" />
+    <list default="true" id="fd2efdf5-3575-4dfc-8aae-3d8fef53e28a" name="Changes" comment="16-10-2026">
+      <change afterPath="$PROJECT_DIR$/src/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue_problems/Program2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue_problems/Program3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/Program1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_problems/Program1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/Program2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_problems/Program2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_problems/Program3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_problems/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/queue_problems/notex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue_problems/notex.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +46,8 @@
     "Application.Program3.executor": "Run",
     "Application.Program4.executor": "Run",
     "Application.queue_problems.Program1.executor": "Run",
+    "Application.queue_problems.Program2.executor": "Run",
+    "Application.queue_problems.Program3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
@@ -59,38 +58,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="queue_problems" />
       <recent name="stack_problems" />
       <recent name="expressions" />
       <recent name="complexities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.queue_problems.Program1">
-    <configuration name="Program1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack_problems.Program1" />
-      <module name="dsa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack_problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Program2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack_problems.Program2" />
-      <module name="dsa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack_problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.queue_problems.Program3">
     <configuration name="Program3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack_problems.Program3" />
       <module name="dsa" />
@@ -130,13 +104,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="queue_problems.Program2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue_problems.Program2" />
+      <module name="dsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue_problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="queue_problems.Program3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue_problems.Program3" />
+      <module name="dsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue_problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.queue_problems.Program3" />
+        <item itemvalue="Application.queue_problems.Program2" />
         <item itemvalue="Application.queue_problems.Program1" />
         <item itemvalue="Application.Program4" />
         <item itemvalue="Application.Program3" />
-        <item itemvalue="Application.Program2" />
-        <item itemvalue="Application.Program1" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792131293272</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="16-10-2026">
+      <option name="closed" value="true" />
+      <created>1792135144161</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1792135144161</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -230,6 +238,7 @@
     <MESSAGE value="06-10-2026" />
     <MESSAGE value="14-10-20261" />
     <MESSAGE value="14-10-2026" />
-    <option name="LAST_COMMIT_MESSAGE" value="14-10-2026" />
+    <MESSAGE value="16-10-2026" />
+    <option name="LAST_COMMIT_MESSAGE" value="16-10-2026" />
   </component>
 </project>

@@ -1,0 +1,16 @@
+            Questions
+Stack       [Done]
+Queue       [Done]
+LinkedList
+Tree
+Graph
+Searching   [Done]
+Sorting     [Done]
+
+***
+Algorithms [Explanation + Questions]
+----------
+Recursion
+Backtracking
+Dynamic Programming
+Greedy Algorithm

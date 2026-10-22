@@ -1,4 +1,7 @@
 1.
+A bank uses a queue system to manage its customers. Customers arrive and join the queue in the order they arrive. The bank serves customers from the front of the queue.
+You are given a sequence of operations. An operation 1 x means customer x joins the queue, and an operation 2 means the bank serves the customer at the front of the queue. If the queue is empty when a service operation occurs, print Queue is empty.
+After processing all operations, print the IDs of all remaining customers from front to rear.
 Input:
     1 Add customer X to the queue
     2 serve and remove the customer at the front
@@ -23,6 +26,10 @@ Output: 101 102 103
 HW. Print remaining customers
 
 HW 2.
+A college has a shared printer used by multiple students. Every print job has a unique job ID. Print jobs are processed in the order they are submitted.
+You are given N operations. Operation 1 X adds a print job with ID X to the queue. Operation 2 prints and removes the job at the front of the queue. Operation 3 displays the ID of the next job to be printed without removing it.
+If an operation attempts to print or view the next job when the queue is empty, print Printer queue is empty.
+
 Input:
     1 Add print job X to the queue
     2 Process and remove the next print job
@@ -59,5 +66,93 @@ Operation       Action          Queue(F->R)         Output
 2     print & remove front job  503                    502
 2     print & remove front job  Empty                  503
 3               view next job   Empty           Printer queue is empty
+
+
+---------------------
+Elimination Game using Queue   [Program2]
+----------------------------
+- N number of player stand in a circle.
+- each player has a unique ID from 1 to N.
+- Starting from the first player. count K players in a current circle.
+- The player at position K is eliminated, and then counting resumes
+  from the next player.
+- the final output will be only one player remains in the circle.
+
+Sample:
+Inputs:
+N = 5 {1,2,3,4,5}
+K = 3
+
+Output: 4
+
+Explanation:
+Round   Q before elimination    eliminated Player   Q after elimination
+-------------------------------------------------------------------------
+ 1       1 2 3 4 5                    3              4 5 1 2
+ 2       4 5 1 2                      1              2 4 5
+ 3       2 4 5                        5              2 4
+ 4       2 4                          2              4
+
+ Player 4 remains, so that output is 4
+
+------------------------
+Maximum Element in Every Sliding Window [Program3]
+---------------------------------------
+Inputs:
+    Array Size: 8
+    Window/chunk size = 3
+    Elements based on the size = 1 3 -1 -3 5 3 6 7
+
+Output: 3 3 5 5 6 7
+
+Window     Elements         Maximum
+------------------------------------
+ 1         [1,3,-1]            3
+ 2         [3,-1,-3]           3
+ 3         [-1,-3,5]           5
+ 4         [-3,5,3]            5
+ 5         [5,3,6]             6
+ 6         [3,6,7]             7
+
+---------------------------------------------
+HW: First Negative Integer in Every Window
+---------------------------------------------
+Inputs:
+    Array Size: 8
+    Window/chunk size = 3
+    Elements based on the size = -8 2 3 -6 10 2 -1 4
+
+Output:  -8 -6 -6 -6 -1 -1
+
+Window     Elements         First Negative
+------------------------------------------
+  1       -8 2 3                -8
+  2        2 3 -6               -6
+  3        3 -6 10              -6
+  4        -6 10 2              -6
+  5        10 2 -1              -1
+  6        2 -1 4               -1
+
+Note: If a window contains no negative integer, print 0
+
+Array size = 4
+Window Size = 2
+Elements = [-2 -5 -1 -8]
+
+Output: -2 -5 -1
+
+1   -2 -5   -2
+2   -5 -1   -5
+3   -1 -8   -1
+
+
+
+Queue Questions Sheet
+Pattern-1 Question ---> Easy ----> Medium -----> Hard
+
+
+
+
+
 
 
