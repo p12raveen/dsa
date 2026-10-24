@@ -1,0 +1,40 @@
+Problem-1
+---------
+1. A cloud based server receives requests stored in single linked list
+2. where each node represent a request ID.
+3. To optimize batch processing the server must process requests in a group
+    size K.
+4. Reversing the order of request within each complete group.
+
+Input:
+    N = 7
+    ELements= 101 102 103 104 105 106 107
+    K= 3
+
+Output: 103 102 101 106 105 104 107
+
+Group-1: 101 102 103 ---> 103 102 101
+Group-2: 104 105 106 ---> 106 105 104
+Remaining request 107 stays unchanged
+
+Problem-2: Combine two sorted employee lists
+---------
+Input:
+    N1: 4
+    a: 12 25 40 65
+    N2: 5
+    b: 10 25 30 50 70
+
+Output: 10 12 25 25 30 40 50 65 70
+
+HW: Problem-3:
+Input:
+    6
+    501 204 703 106 805 306
+
+Output: 501 703 805 204 106 306
+
+
+
+
+
