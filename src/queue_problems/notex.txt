@@ -146,7 +146,7 @@ Output: -2 -5 -1
 3   -1 -8   -1
 
 ==================================
-A bus ticket counter serves passengers standing in a circular arrangement of \(N\) positions, numbered from 1 to N. Each position can hold one passenger.
+A bus ticket counter serves passengers standing in a circular arrangement of N positions, numbered from 1 to N. Each position can hold one passenger.
 
 Initially, all positions are empty. Passengers arrive in sequence, and each passenger has a unique ID. When a passenger arrives, they occupy the next available position, starting from the position after the last occupied position. If the search reaches position N, it continues from position 1.
 
