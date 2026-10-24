@@ -145,7 +145,44 @@ Output: -2 -5 -1
 2   -5 -1   -5
 3   -1 -8   -1
 
+==================================
+A bus ticket counter serves passengers standing in a circular arrangement of \(N\) positions, numbered from 1 to N. Each position can hold one passenger.
 
+Initially, all positions are empty. Passengers arrive in sequence, and each passenger has a unique ID. When a passenger arrives, they occupy the next available position, starting from the position after the last occupied position. If the search reaches position N, it continues from position 1.
+
+When a passenger is served, their position becomes empty. The next arriving passenger must search from the position after the last position used for an arrival, wrapping around if necessary, and occupy the first empty position found.
+
+If all positions are occupied, reject the arriving passenger.
+
+Given a series of operations, simulate the ticket counter and report the position assigned to each arriving passenger, or FULL if no position is available.
+
+
+Input: 
+3 7
+A 101
+A 102
+A 103
+S 102
+A 104
+A 105
+A 106
+
+Output:
+1
+2
+3
+2
+FULL
+FULL
+
+Explanation
+1. Passenger 101 occupies position 1.
+2. Passenger 102 occupies position 2.
+3. Passenger 103 occupies position 3. All positions are full.
+4. Passenger 102 leaves, making position 2 empty.
+5. Passenger 104 arrives. The search begins after position 3, wraps around to position 1, finds it occupied, and then finds position 2 empty. Passenger 104 occupies position 2.
+6. Passenger 105 arrives, but all positions are occupied.
+7. Passenger 106 also arrives, but all positions remain occupied.
 
 Queue Questions Sheet
 Pattern-1 Question ---> Easy ----> Medium -----> Hard
