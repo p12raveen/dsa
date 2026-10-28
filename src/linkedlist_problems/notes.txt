@@ -38,3 +38,41 @@ Output: 501 703 805 204 106 306
 HW: https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=linked-lists
 
 
+Problem-3: Priority Based Task Scheduling
+---------
+Task is to rearrange the LL according to the rules
+    1. Put all numbers smaller than P at the beginning
+    2. Put all numbers grater than or equal to P after them.
+Inputs:
+    N = 8
+   LL E = 7 2 9 1 5 8 3 6
+    P = 5  (5 is a partition value)
+Output: 2   1   3   7  9   5   8   6
+
+
+Explain:
+           Step-1:  7 2 9 1 5 8 3 6
+           Step-2:  Select values smaller than 5
+                    2   1   3
+           Step-3:  Select values greater than or equal to 5
+                    7   9   5   8   6
+           Step-4:  2   1   3   7  9   5   8   6
+
+
+Problem-4: Rotate a LL to the right
+---------
+Inputs:
+    N = 5
+    LL E = 101 202 303 404 505
+    K = 2 [rotate the list to the right K times]
+Output: 404 505 101 202 303
+
+Explain:
+           Step-1:  101 202 303 404 505
+           Step-2:  First right rotation
+                    505 101 202 303 404
+           Step-3:  Second right rotation
+                    404 505 101 202 303
+           Step-4:  404 505 101 202 303
+
+
