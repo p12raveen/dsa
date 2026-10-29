@@ -1,0 +1,67 @@
+Recursion
+---------
+1. Method calling itself directly or indirectly.
+2. Types of Recursion
+    |- Indirect Recursion
+      A() -> B() -> C() -> A()
+    |- Direct Recursion ****
+        A()
+        {
+            A()
+        }
+3. Base Case: To stop the recursive calling
+4. Direct Recursion
+    |- Head Recursion
+        |- Recursive statement should be first statement in method
+        |- Approach: Bottom Up Approach
+    |- Tail Recursion:
+        |- Recursive statement should be last statement in method
+        |- Approach: Top Down Approach                                                 - show(0) -> Terminate
+    |- Tree Recursion
+        |- More than one Recursive statement in the method
+    |- Nested Recursion
+        |- Recursive statement inside another Recursive statement
+
+HW. Dry Run
+1.
+    private static void show(int num) {
+
+        if(num>0)
+        {
+            show(num-1);
+            show(num-1);
+            System.out.println(num);
+        }
+    }
+
+2.
+    private static void show(int num) {
+
+        if(num>0)
+        {
+            show(num-1);
+            System.out.println(num);
+            show(num-1);
+        }
+    }
+
+3.
+    public class Program4 {
+       public static void main(String[] args) {
+
+           System.out.println(show(95));
+       }
+
+       private static int show(int num) {
+
+           if(num>100)
+           {
+               return num-10;
+           }
+           return show(show(num+11));
+       }
+   }
+
+   --------------------
+   Questions on recursion
+   Questions on Backtracking

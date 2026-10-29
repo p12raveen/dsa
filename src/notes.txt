@@ -1,7 +1,7 @@
             Questions
 Stack       [Done]
 Queue       [Done]
-LinkedList
+LinkedList  [Done]
 Tree
 Graph
 Searching   [Done]
@@ -10,7 +10,7 @@ Sorting     [Done]
 ***
 Algorithms [Explanation + Questions]
 ----------
-Recursion
+Recursion          [Done]
 Backtracking
 Dynamic Programming
 Greedy Algorithm
