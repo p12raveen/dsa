@@ -63,5 +63,16 @@ HW. Dry Run
    }
 
    --------------------
-   Questions on recursion
-   Questions on Backtracking
+Question Patterns
+1. Number based Recursion [Program5]
+2. Digit based Recursion [Program6]
+3. Array based Recursion [Program7]
+4. String based recursion [Program8]
+5. Searching based recursion [Program9]
+6. Multiple recursion [Program10]
+7. Tree Recursion [Done]
+8. Divide and Conquer [Done]
+
+Pending
+9. Subsequence generation
+10. Backtracking
