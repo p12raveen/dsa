@@ -1,0 +1,16 @@
+Dynamic Programming
+-------------------
+1. DP is an optimization technique.
+2. It is used to solve problems by breaking them
+   into subproblems and storing the results to avoid
+   redundant computation.
+3. Approach
+    |- Top Down <=> Memoization  [recursion + store]
+    |- Bottom Up <=> Tabulation  [loop + store]
+
+4. Fibonacci Program
+    |- Program1: Without DP
+    |- Program2: With Memoization
+    |- Program3: With Tabulation
+
+5. Pattern Question

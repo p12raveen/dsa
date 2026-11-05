@@ -72,7 +72,35 @@ Question Patterns
 6. Multiple recursion [Program10]
 7. Tree Recursion [Done]
 8. Divide and Conquer [Done]
+9. Subsequence generation & Backtracking [Program11] & [Program12]
+input: ABC
+Output:
+ABC
+AB
+AC
+A
+BC
+B
+C
+""
 
-Pending
-9. Subsequence generation
-10. Backtracking
+    2^3 = 8
+
+HW.
+1. Generate all subsequence of a string
+2. Generate all subsequence of an integer array
+3. count the total number of subsequence
+4. Generate subsequence whose sum equals K
+5. Find the longest subsequence with a given property  [Program13]
+    Input:
+    N = 6
+    Array = {1,2,3,4,5,6}
+    K = 10
+
+    Output: 4 bcoz, {1,2,3,4}
+
+    Explain: Possible Subsequence on the basis of K
+    4 6 = 10
+    1 4 5 = 10
+    2 3 5 = 10
+    1 2 3 4 = 10

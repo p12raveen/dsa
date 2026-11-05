@@ -2,8 +2,8 @@
 Stack       [Done]
 Queue       [Done]
 LinkedList  [Done]
-Tree
-Graph
+Tree        [Done]
+Graph       [Done]
 Searching   [Done]
 Sorting     [Done]
 
@@ -11,6 +11,6 @@ Sorting     [Done]
 Algorithms [Explanation + Questions]
 ----------
 Recursion          [Done]
-Backtracking
+Backtracking       [Done]
 Dynamic Programming
 Greedy Algorithm
